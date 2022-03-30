@@ -32,7 +32,7 @@ class apiCall extends Controller
 
   
   // Searching
-  function search(Request $req,$generalTopic){
+  function search(Request $req,$generalTopic=NULL){
 
     if ($generalTopic==NULL) {
       $searchTxt=$req->input('searchInput');

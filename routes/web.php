@@ -13,10 +13,10 @@ use App\Http\Controllers\apiCall;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get("/news",[apiCall::class,"topHeadlines"]);
+Route::get("/",[apiCall::class,"topHeadlines"]);
 Route::get("/search",[apiCall::class,"search"]);
 Route::get("/customSearch",[apiCall::class,"countryCode"]);
-Route::view("/",'home');
+// Route::view("/",'home');
 
 
 Route::get("/{generalTopic}",[apiCall::class,"search"]);
