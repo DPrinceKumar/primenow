@@ -17,25 +17,25 @@
         <h1 class="glow">Prime Now</h1>
     </div>
      <div class="logout">
-        <a href="logout">
+        <a href="/logout">
             <button type="submit" class="btn">Logout</button>
         </a>
     </div>
     {{-- navbar --}}
     <div class="nav">
         <ul>
-            <li><a href="/news">Home</a></li>
-            <li><a href="/general">General</a></li>
-            <li><a href="/crypto">Crypto</a></li>
-            <li><a href="/stock">Stock</a></li>
-            <li><a href="/business">Business</a></li>
-            <li><a href="/tech">Tech</a></li>
-            <li><a href="/scince">Science</a></li>
-            <li><a href="/health">Health</a></li>
-            <li><a href="/entertainment">Entertainment</a></li>
-            <li><a href="/sports">Sports</a></li>
-            <li><a href="/politics">Politics</a></li>
-            <li><a href="/lifeStyle">LifeStyle</a></li>
+            <li><a href="/topheadline">Home</a></li>
+            <li><a href="/q/general">General</a></li>
+            <li><a href="/q/crypto">Crypto</a></li>
+            <li><a href="/q/stock">Stock</a></li>
+            <li><a href="/q/business">Business</a></li>
+            <li><a href="/q/tech">Tech</a></li>
+            <li><a href="/q/scince">Science</a></li>
+            <li><a href="/q/health">Health</a></li>
+            <li><a href="/q/entertainment">Entertainment</a></li>
+            <li><a href="/q/sports">Sports</a></li>
+            <li><a href="/q/politics">Politics</a></li>
+            <li><a href="/q/lifeStyle">LifeStyle</a></li>
         </ul>
     </div>
 </div>
@@ -143,37 +143,38 @@
 <footer class="footer-distributed">
 
     <div class="footer-left">
-        <h3>Company<span>logo</span></h3>
+        <h3>Prime <span>Now</span></h3>
         <p class="footer-links">
             <a href="#" class="link-1">Home</a>
-            <a href="#">Blog</a>
-            <a href="#">Pricing</a>
-            <a href="#">About</a>
-            <a href="#">Faq</a>
-            <a href="#">Contact</a>
+            <a href="/business">Business</a>
+            <a href="/science">Science</a>
+            <a href="/politics">Politics</a>
+            <a href="prince2kumar4147@gmail.com">Contact</a>
         </p>
-        <p class="footer-company-name">Company Name © 2015</p>
+        <p class="footer-company-name">PRIME NOW © 2022</p>
     </div>
 
     <div class="footer-center">
         <div>
             <i class="fa-solid fa-map-location-dot"></i>
-            <p><span>444 S. Cedros Ave</span> Solana Beach, California</p>
+            <p><span>Law gate </span> Lovely Professional University, Punjab 144401</p>
         </div>
         <div>
             <i class="fa fa-phone"></i>
-            <p>+1.555.555.5555</p>
+            <p>+91- 1234567890</p>
         </div>
         <div>
             <i class="fa fa-envelope"></i>
-            <p><a href="mailto:support@company.com">support@company.com</a></p>
+            <p><a href="mailto:prince2kumar4147@gmail.com">prince2kumar4147@gmail.com</a></p>
         </div>
     </div>
 
     <div class="footer-right">
         <p class="footer-company-about">
             <span>About the company</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                The prime news, started in 2022 and from then on has been steadily
+                growing.The prime news's independent editorial stand and its reliable and balanced presentation of the
+                news, won for it the serious attention and regard of the people who matter in India andall over world
         </p>
 
         <div class="footer-icons">

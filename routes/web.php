@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\apiCall;
+use App\Http\Controllers\userAuth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,13 +14,33 @@ use App\Http\Controllers\apiCall;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get("/",[apiCall::class,"topHeadlines"]);
+
+// login 
+Route::get('/login', function () {
+    if (session()->has('user')) 
+    {
+        return redirect('/topheadline');
+    }
+    return view('login');
+});
+
+Route::post('/login',[userAuth::class,'Login']);
+
+Route::get("/topheadline",[apiCall::class,"topHeadlines"]);
 Route::get("/search",[apiCall::class,"search"]);
 Route::get("/customSearch",[apiCall::class,"countryCode"]);
-// Route::view("/",'home');
+Route::get("/q/{generalTopic}",[apiCall::class,"search"]); 
+
+    
+// // logout 
+Route::get('/logout', function () {
+    if (session()->has('user')) 
+    {
+        session()->pull('user');
+    }
+    return view('login');
+});
 
 
-Route::get("/{generalTopic}",[apiCall::class,"search"]);
-// Route::get("/Crypto",[apiCall::class,"generalTopic"]);
-
-
+Route::view("/signup",'signup');
+Route::post("/register",[userAuth::class,'signup']);

@@ -25,7 +25,7 @@
         category:
         The category you want to get headlines for. Possible 
         options: business entertainment general health science sports technology.
-            Note: you can't mix this param with the sources param.
+        Note: you can't mix this param with the sources param.
     </pre>
 </div>
 

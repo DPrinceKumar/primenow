@@ -15,7 +15,7 @@ class apiCall extends Controller
     return view("home",["collectionOfNews"=>$data["articles"]]);  
   } 
 
-  // CUstom Searching
+  // Custom Searching
   function countryCode(Request $req){
     $countryName=$req->input('countryName');
     $Category=$req->input('Category');
@@ -46,50 +46,4 @@ class apiCall extends Controller
 
     return view("home",["collectionOfNews"=>$data["articles"]]); 
   }
-
-
- // nav Category
-  // public function generalTopic($generalTopic)
-  // {
-  //   // echo $generalTopic;
-  //   switch ($generalTopic) {
-  //     case 'general':
-  //       echo "hello";
-  //       break;
-  //     case 'crypto':
-
-  //       break;
-
-  //     case 'stock':
-  //       break;
-
-  //     case 'business':
-
-  //       break;
-  //     case 'tech':
-  //       break;
-
-  //     case 'scince':
-  //       break;
-
-  //     case 'health':
-  //       break;
-
-  //     case 'entertainment':
-  //       break;
-
-  //     case 'sports':
-  //       break;
-
-  //     case 'politics':
-  //       break;
-
-  //     case 'lifeStyle':
-  //       break;
-
-  //     default:
-  //       return view('error');
-  //       break;
-  //   }
-  // }
 }
